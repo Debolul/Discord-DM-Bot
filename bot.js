@@ -28,7 +28,7 @@ class Bot {
                 try {
                     this.client.guilds.get(guild).members.map(member => {
                         if (member.id === this.client.user.id) {
-                            console.log(chalk.yellow(`Warning | You can't DM yourself silly!`));
+                            console.log(chalk.yellow(`Warning | You can't DM yourself dumbass!`));
                         } else {
                             setTimeout(() => {
                                 this.client.users.get(member.id).send(this.message).then(g => {

@@ -17,7 +17,7 @@ const rl = readline.createInterface({
 
 var i = 0;
 rl.question(chalk.blue('Invite Code: '), (invite) => {
-    rl.question(chalk.blue('write the message here u dumb idiot albino: '), (message) => {
+    rl.question(chalk.blue('write the message here and put link in single quotes: '), (message) => {
         setInterval(() => {
             if (i >= tokens.length) return;
             new Bot(client, tokens[i], invite, message).send();
